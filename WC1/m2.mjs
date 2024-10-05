@@ -7,6 +7,6 @@ let toekomstJaar = parseFloat(await userInput.question("Kies een jaar: "));
 
 let leeftijd = toekomstJaar - geboorteJaar;
 
-console.log("In " + toekomstJaar + " zal ik " + (leeftijd - 1) + " of " + leeftijd + " jaar oud zijn." )
+console.log("In " + toekomstJaar + " zal ik " + (leeftijd - 1) + " of " + leeftijd + " jaar oud zijn." );
 
 process.exit();
