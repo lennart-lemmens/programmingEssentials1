@@ -23,6 +23,9 @@ switch (maand)
         break;
     case "februari":
         console.log(maand + " heeft 28 of 29 dagen.");
+        break;
+    default:
+        console.log("Deze maand ken ik niet.");
 }
 
 process.exit();
