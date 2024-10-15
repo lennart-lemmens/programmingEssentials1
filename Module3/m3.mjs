@@ -7,7 +7,7 @@ let deler = 2;
 
 do
 {
-    if ((getal < 2) || ((getal % deler == 0) && (getal != deler))) // controleer of getal groter is dan 1 en of het deelbaar is door een ander getal dan zichzelf en 1
+    if ((getal < 2) || ((getal % deler == 0) && (getal != deler))) // controleer of getal kleiner is dan 2 en of het deelbaar is door een ander getal dan zichzelf en 1
     {
         console.log(`${getal} is geen priemgetal`);
         process.exit();
