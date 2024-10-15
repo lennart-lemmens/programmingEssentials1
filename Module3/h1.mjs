@@ -1,4 +1,4 @@
-let grootte = 9; // werkt alleen met oneven getallen
+let grootte = 5; // werkt alleen met oneven getallen
 
 // upper part of diamond
 for (let i = 1; i <= grootte; i += 2)
