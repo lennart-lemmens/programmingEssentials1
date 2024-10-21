@@ -5,8 +5,8 @@ We voegen enkele variabele booleans toe aan onze sterrenpiramide van oefeningenr
 Afhankelijk van of deze variabelen true of false zijn zal de vorm van onze piramide veranderen.
 */
 
-let startTop = true;
-let startLeft = true;
+let startTop = false;
+let startLeft = false;
 let hoogte = 3;
 
 if (startTop == true)
@@ -31,14 +31,16 @@ if (startTop == true)
         {
             let rij = "";
         
-            for (let j = 1; j < hoogte - i; j++) // voeg witruimte toe voor de sterren, beginnende met de meeste witruimte
+            for (let j = 0; j < hoogte; j++) 
             {
-                rij += " ";
-            }
-            
-            for (let k = 0; k <= i; k++) // teken de sterren beginnende met de korte zijde
-            {
-                rij += "*";
+                if (j >= hoogte - 1 - i) // teken sterren beginnende met de korte zijde
+                {
+                    rij += "*";
+                }
+                else // voeg witruimte toe voor de sterren, beginnende met de meeste witruimte
+                {
+                    rij += " ";
+                }
             }
             
             console.log(rij);
@@ -67,14 +69,16 @@ else
         {
             let rij = "";
         
-            for (let j = hoogte - i; j > 0; j--) // voeg witruimte toe voor de sterren, beginnende met geen witruimte
+            for (let j = 0; j < hoogte; j++) 
             {
-                rij += " ";
-            }
-            
-            for (let k = 0; k < i; k++) // teken sterren beginnende met langste zijde
-            {
-                rij += "*";
+                if (j >= i - 1) // teken sterren beginnende met de lange zijde
+                {
+                    rij += "*";
+                }
+                else // voeg witruimte toe voor de sterren, beginnende met geen witruimte
+                {
+                    rij += " ";
+                }
             }
             
             console.log(rij);
