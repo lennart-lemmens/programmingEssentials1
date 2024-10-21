@@ -17,3 +17,5 @@ do
 
 console.log(`${getal} is een priemgetal`);
 process.exit();
+
+// eventuele optimalisatie: aantal keer tellen dat getal deelbaar is en op het einde testen of dat aantal exact gelijk is aan 2 of niet.
