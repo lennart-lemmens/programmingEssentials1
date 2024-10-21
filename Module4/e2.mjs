@@ -1,6 +1,6 @@
 /*
-E2: Veelvoude
-n
+E2: Veelvouden
+
 Schrijf een script met de volgende variabelen:
 
 start: Met welk getal beginnen we?
