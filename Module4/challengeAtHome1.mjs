@@ -11,26 +11,23 @@ const userInput = readline.createInterface({input, output});
 // Vraag hoogte en breedte aan gebruiker
 let hoogte = parseFloat(await userInput.question("height: "));
 let breedte = parseFloat(await userInput.question("width: "));
-let rij;
 
 console.log("\nOutput:\n");
 
 // Teken rechthoek
-for (let i = 0; i < hoogte; i++)
+for (let rij = 0; rij < hoogte; rij++)
 {
-    rij = "";
-    for (let j = 0; j < breedte; j++)
+    let lijn = "";
+    for (let kolom = 0; kolom < breedte; kolom++)
     {
-        if (i === 0 || i === hoogte - 1 || j === 0 || j === breedte - 1) // Buitenrand: *
+        let karakter = " "; // standaard leeg
+        if (rij === 0 || rij === hoogte - 1 || kolom === 0 || kolom === breedte - 1) // Buitenrand: *
         {
-            rij += "*";
+            karakter = "*";
         }
-        else // Binnenkant: witruimte
-        {
-            rij += " ";
-        }
+        lijn += karakter;
     }
-    console.log(rij);
+    console.log(lijn);
 }
 
 process.exit();
