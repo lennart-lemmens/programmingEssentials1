@@ -5,7 +5,6 @@ Combineer @1 met je sterrenpiramide. Zorg voor een extra parameter outline.
 Als outline true is zal enkel de omtrek bestaan uit sterren, als het false is laat je gewoon de opgevulde versie zien.
 */
 
-
 const startTop = true;
 const startLeft = true;
 const outline = true;
@@ -98,6 +97,5 @@ for (let rowsPrinted = 0; rowsPrinted < rowsToPrint; rowsPrinted++, spacesToAdd 
         }
     }
     console.log(line);
-    //verticalOutline += verticalOutlineIncrease;
     diagonalOutline += diagonalOutlineIncrease;
 }
