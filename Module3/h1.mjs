@@ -1,3 +1,10 @@
+/*
+H1: Sterrenpiramide uitbreiden
+
+We gaan de sterrenpiramide uit M2 aanpassen. 
+Zorg ervoor dat er nu in plaats van een piramide een diamand te voorschijn komt.
+*/
+
 let grootte = 5; // werkt alleen met oneven getallen
 
 // upper part of diamond

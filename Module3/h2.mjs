@@ -1,3 +1,11 @@
+/*
+H2: Lopende gemiddelde
+
+Schrijf een script dat aan de gebruiker vraagt om een getal in te geven. 
+Het script zal gemiddelde van de ingegeven getallen bijhouden en telkens afdrukken. 
+Het script stopt wanneer de het gemiddelde boven 25 gaat.
+*/
+
 import * as readline from 'node:readline/promises';
 import{stdin as input, stdout as output} from 'node:process';
 const userInput = readline.createInterface({input, output});

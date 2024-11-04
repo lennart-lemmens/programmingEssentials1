@@ -1,3 +1,10 @@
+/*
+@2: Grootste gemene deler
+
+Vraag twee getallen aan de gebruiker. 
+Zoek de grootste gemene deler van deze twee getallen.
+*/
+
 import * as readline from 'node:readline/promises';
 import{stdin as input, stdout as output} from 'node:process';
 const userInput = readline.createInterface({input, output});

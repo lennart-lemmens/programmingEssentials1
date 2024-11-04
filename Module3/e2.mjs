@@ -1,3 +1,9 @@
+/*
+E2: Tafel van vermenigvuldiging
+
+Maak een variabele getal aan, gebruik een lus om de tafels van vermenigvuldiging van dat getal te laten zien.
+*/
+
 let getal = 5;
 
 console.log("De tafel van " + getal + ":");

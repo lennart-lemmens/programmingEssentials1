@@ -1,3 +1,13 @@
+/*
+@1: Rij van Fibonacci
+
+De rij van Fibonacci is een rij getallen waarbij elk getal de som is van de twee voorgaande getallen. 
+De rij begint met 0 en 1. De rij begint dus als volgt: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ...
+
+Schrijf een script dat de rij van Fibonacci afdrukt tot een bepaald getal. 
+Vraag aan de gebruiker tot welk getal de rij moet afgedrukt worden.
+*/
+
 import * as readline from 'node:readline/promises';
 import{stdin as input, stdout as output} from 'node:process';
 const userInput = readline.createInterface({input, output});
