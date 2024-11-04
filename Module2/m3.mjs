@@ -1,3 +1,11 @@
+/*
+M3: Quiz
+
+Bouw een quizspel waarbij de gebruiker 5 vragen moet beantwoorden. 
+Toon of hij de vraag juist of fout heeft en toon achteraf de score van de gebruiker. 
+De vragen mag je zelf kiezen.
+*/
+
 import * as readline from 'node:readline/promises';
 import{stdin as input, stdout as output} from 'node:process';
 const userInput = readline.createInterface({input, output});

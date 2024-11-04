@@ -1,3 +1,12 @@
+/*
+M1: Songtitels
+
+Maak een keuzemenu met de keuze tussen 4 verschillende artiesten. 
+Lees daarna de keuze in van de gebruiker en toon een songtitel van deze artist.
+
+Maak zowel een versie dat gebruik maakt van if/else en een versie dat gebruik maakt van een switch/case.
+*/
+
 import * as readline from 'node:readline/promises';
 import{stdin as input, stdout as output} from 'node:process';
 const userInput = readline.createInterface({input, output});

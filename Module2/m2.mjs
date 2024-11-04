@@ -1,3 +1,11 @@
+/*
+M2: Simpele rekenmachine
+
+Vraag twee getallen aan de gebruiker. 
+Vraag vervolgens aan de gebruiker of hij deze wilt optellen, aftrekken, vermenigvuldigen of delen.
+Voor die operatie uit en geef het resultaat terug.
+*/
+
 import * as readline from 'node:readline/promises';
 import{stdin as input, stdout as output} from 'node:process';
 const userInput = readline.createInterface({input, output});
