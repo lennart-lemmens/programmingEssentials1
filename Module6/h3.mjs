@@ -10,18 +10,7 @@ import * as readline from 'node:readline/promises';
 import{stdin as input, stdout as output} from 'node:process';
 const userInput = readline.createInterface({input, output});
 
-let playingField = [
-    ["-","-","-","-","-","-","-","-","-","-"],
-    ["-","-","-","-","-","-","-","-","-","-"],
-    ["-","-","-","-","-","-","-","-","-","-"],
-    ["-","-","-","-","-","-","-","-","-","-"],
-    ["-","-","-","-","-","-","-","-","-","-"],
-    ["-","-","-","-","-","-","-","-","-","-"],
-    ["-","-","-","-","-","-","-","-","-","-"],
-    ["-","-","-","-","-","-","-","-","-","-"],
-    ["-","-","-","-","-","-","-","-","-","-"],
-    ["-","-","-","-","-","-","-","-","-","-"]
-];
+let playingField = createPlayingField(10);
 
 let x = parseInt(await userInput.question("X-coördinaat: "));
 let y = parseInt(await userInput.question("Y-coördinaat: "));
@@ -34,6 +23,20 @@ printPlayingField(playingField);
 
 process.exit();
 
+
+function createPlayingField(numberOfCells)
+{
+    let field = []
+    for (let i = 0; i < numberOfCells; i++)
+    {
+        field[i] = [];
+        for (let j = 0; j < numberOfCells; j++)
+        {
+            field[i][j] = "-";
+        }
+    }
+    return field;
+}
 
 function printPlayingField(array)
 {
