@@ -32,7 +32,7 @@ answer = await userInput.question("Jouw antwoord: ");
 checkAnswer(answer, "Blauwe vinvis");
 
 // Question 4
-console.log("Vraag 4: Wie schreef het toneelstuk 'Romeo an Julia'?");
+console.log("Vraag 4: Wie schreef het toneelstuk 'Romeo en Julia'?");
 answer = await userInput.question("Jouw antwoord: ");
 checkAnswer(answer, "Shakespeare");
 
